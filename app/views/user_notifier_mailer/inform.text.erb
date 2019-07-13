@@ -1,1 +1,1 @@
-<%= link_to "Visit here to activate your account.", "http://localhost:3000/activation?email=#{@user.email}"%>
+<%= link_to "Visit here to activate your account.", "#{ENV['DOMAIN']}/activation?email=#{@user.email}"%>
